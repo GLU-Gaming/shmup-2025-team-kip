@@ -14,18 +14,16 @@ public class GameManager : MonoBehaviour
 
     void Update ()
     {
-
-        if ( bgPlane_1.transform.position == new Vector3( -209, 0, 102 ) )
+        if ( Vector3.Distance( bgPlane_1.transform.position, new Vector3( -209, 0, 102 ) ) < 0.01f )
         {
+            Debug.Log( "plane should destroy" );
             Instantiate( bgPlane_2, new Vector3( -209, 0, 102 ), Quaternion.identity );
             Destroy( bgPlane_1 );
         }
 
-        if ( bgPlane_2.transform.position == new Vector3( 0, 0, 102 ) )
+        if ( Vector3.Distance( bgPlane_2.transform.position, new Vector3( 0, 0, 102 ) ) < 0.01f )
         {
             Instantiate( bgPlane_3, new Vector3( 209, 0, 102 ), Quaternion.identity );
-            
         }
-
     }
 }
