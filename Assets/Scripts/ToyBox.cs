@@ -8,16 +8,28 @@ public class ToyBox : MonoBehaviour
 
     public float toychooser;
     public float toyTimer = 0;
+
+    Rigidbody rb;
+
+    float flyUp;
+    float flyDown;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     
     void Update()
     {
+        if(toyTimer > 1)
+        {
+            flyDown = Random.Range(-5, 8);
+            flyUp = Random.Range(-5, 8);
+        }
+
         toyTimer += Time.deltaTime;
 
+        // spawn in random toy
        if(toyTimer > 1)
         {
             toychooser = Random.Range(0, 4);
@@ -37,6 +49,9 @@ public class ToyBox : MonoBehaviour
             Instantiate(Toy3, transform.position, transform.rotation);
             toyTimer = 0;
         }
+
+        // let toybox fly
+        //rb.AddRelativeForce(new Vector3(flyUp, flyDown, 0));
     }
 
 }
