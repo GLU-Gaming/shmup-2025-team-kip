@@ -15,8 +15,6 @@ public class Bullet : MonoBehaviour
         // start Bullet delete timer
        bulletTimerStart = true;
 
-       
-
     }
 
     
