@@ -386,7 +386,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141576825}
-  - component: {fileID: 1141576826}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -409,21 +408,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1141576826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141576824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b984b7f66acd4c84da44bda2367fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgPlane_1: {fileID: 9097854776997283730, guid: c08718351a9d46c488070405d447038e, type: 3}
-  bgPlane_2: {fileID: 2235623951940524172, guid: 82884ea6823544c4dbd5f6a1b9ddf336, type: 3}
-  bgPlane_3: {fileID: 5288546041485032605, guid: d5d5b28b7645d4346b221d2e09367937, type: 3}
 --- !u!1 &1408632783
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,8 +690,20 @@ PrefabInstance:
       value: robotEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 61.14
       objectReference: {fileID: 0}
     - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -744,6 +740,10 @@ PrefabInstance:
     - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228014788841638800, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
