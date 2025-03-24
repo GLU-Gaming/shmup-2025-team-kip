@@ -24,4 +24,11 @@ public class HomingMissile : MonoBehaviour
 
         rb.linearVelocity = transform.forward * speed;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

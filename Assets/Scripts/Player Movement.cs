@@ -30,4 +30,13 @@ public class PlayerMovement : MonoBehaviour
            bulletSpawnPoint =  Instantiate(Bullet,transform.position,transform.rotation);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        // check if Player Hit an enemy
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Hit Enemy");
+            Destroy(gameObject);
+        }
+    }
 }
