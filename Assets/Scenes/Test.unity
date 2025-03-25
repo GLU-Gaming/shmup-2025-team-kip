@@ -838,6 +838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4d92e50c26311478b4a93b058a20cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalSpeed: -1
+  horizontalSpeed: -1
   Bullet: {fileID: 5338643867870076766, guid: 28e71231daf69164381fd9817df5d689, type: 3}
   BulletSpawn: {fileID: 0}
 --- !u!54 &1282945467
@@ -1006,7 +1008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567617508590175003, guid: 3f038f5b7b311e24398c3d18ac81ebd0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8619437340578691264, guid: 3f038f5b7b311e24398c3d18ac81ebd0, type: 3}
       propertyPath: m_UseGravity
