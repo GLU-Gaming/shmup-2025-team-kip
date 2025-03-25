@@ -11,9 +11,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject BulletSpawn;
 
     [SerializeField] float speedamount;
+
+    protected GameManager gamemanager;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gamemanager = GetComponent<GameManager>();
     }
 
    
@@ -37,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
         // check if Player Hit an enemy
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Hit Enemy");
-            Destroy(gameObject);
+            gamemanager.lives -= 1;
+
         }
     }
 }
