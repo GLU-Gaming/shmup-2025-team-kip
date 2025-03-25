@@ -4,8 +4,8 @@ public class toy : MonoBehaviour
 {
     Rigidbody rb;
 
-    private float verticalThrow = 3.2f;
-    private float horizontalThrow = -1.2f;
+    private float verticalThrow = 3.5f;
+    private float horizontalThrow = -1.1f;
     private float ThrowTimer = 0;
 
 

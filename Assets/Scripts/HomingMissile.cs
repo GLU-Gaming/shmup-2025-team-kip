@@ -8,6 +8,8 @@ public class HomingMissile : MonoBehaviour
 
     private Rigidbody rb;
 
+    private float carHealth = 3;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -24,6 +26,11 @@ public class HomingMissile : MonoBehaviour
         rb.angularVelocity = -amountToRotate * rotateSpeed;
 
         rb.linearVelocity = transform.forward * speed;
+        //Delete car if no health
+        if (carHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -32,5 +39,11 @@ public class HomingMissile : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        // check if car got hit by bullet
+        if (other.CompareTag("Bullet"))
+        {
+            carHealth -= 1;
+        }
+        
     }
 }

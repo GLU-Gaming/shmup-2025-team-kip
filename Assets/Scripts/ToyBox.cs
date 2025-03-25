@@ -11,8 +11,12 @@ public class ToyBox : MonoBehaviour
 
     Rigidbody rb;
 
-    float flyUp;
-    float flyDown;
+    float flyLeft = -3;
+    float flyright = 3;
+
+    [SerializeField] Vector3 Leftmargin;
+
+    private float toyBoxHealth = 5;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,11 +25,7 @@ public class ToyBox : MonoBehaviour
     
     void Update()
     {
-        if(toyTimer > 1)
-        {
-            flyDown = Random.Range(-5, 8);
-            flyUp = Random.Range(-5, 8);
-        }
+       
 
         toyTimer += Time.deltaTime;
 
@@ -51,7 +51,27 @@ public class ToyBox : MonoBehaviour
         }
 
         // let toybox fly
-        //rb.AddRelativeForce(new Vector3(flyUp, flyDown, 0));
-    }
+        if(transform.position.x <= -4.5f) 
+        {
+            rb.AddRelativeForce(new Vector3(flyright, 0, 0));
+        }
+        if (transform.position.x >= 6.2f)
+        {
+            rb.AddRelativeForce(new Vector3(flyLeft, 0, 0));
+        }
+       // check if toyBox has no health
+       if(toyBoxHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        // check if toybox hit by bullet
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            toyBoxHealth -= 1;
+        }
+    }
 }
