@@ -724,6 +724,14 @@ PrefabInstance:
       propertyPath: BulletSpawn
       value: 
       objectReference: {fileID: 1122695551}
+    - target: {fileID: 5511109066220155342, guid: 26ca6481f4977a241be4ded6bba5f97a, type: 3}
+      propertyPath: verticalSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511109066220155342, guid: 26ca6481f4977a241be4ded6bba5f97a, type: 3}
+      propertyPath: horizontalSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
