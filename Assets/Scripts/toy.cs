@@ -4,9 +4,13 @@ public class toy : MonoBehaviour
 {
     Rigidbody rb;
 
-    private float verticalSpeed = 3;
-    private float horizontalSpeed = 1;
+    private float verticalThrow = 3.5f;
+    private float horizontalThrow = -1.1f;
     private float ThrowTimer = 0;
+
+
+    float DeleteTimer;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -16,10 +20,24 @@ public class toy : MonoBehaviour
    
     void Update()
     {
-        ThrowTimer += Time.deltaTime;
-        if(ThrowTimer < 2)
+        DeleteTimer += Time.deltaTime;
+        if (DeleteTimer > 5)
         {
-            rb.AddRelativeForce(new Vector3(horizontalSpeed, verticalSpeed, 0));
+            Destroy(gameObject);
+        }
+        ThrowTimer += Time.deltaTime;
+        if(ThrowTimer < 1.3f)
+        {
+            rb.AddRelativeForce(new Vector3(horizontalThrow, verticalThrow, 0));
+        }
+
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject );
         }
     }
 }

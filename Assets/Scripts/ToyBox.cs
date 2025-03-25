@@ -8,16 +8,28 @@ public class ToyBox : MonoBehaviour
 
     public float toychooser;
     public float toyTimer = 0;
+
+    Rigidbody rb;
+
+    float flyLeft = -3;
+    float flyright = 3;
+
+    [SerializeField] Vector3 Leftmargin;
+
+    private float toyBoxHealth = 5;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     
     void Update()
     {
+       
+
         toyTimer += Time.deltaTime;
 
+        // spawn in random toy
        if(toyTimer > 1)
         {
             toychooser = Random.Range(0, 4);
@@ -37,6 +49,29 @@ public class ToyBox : MonoBehaviour
             Instantiate(Toy3, transform.position, transform.rotation);
             toyTimer = 0;
         }
-    }
 
+        // let toybox fly
+        if(transform.position.x <= -4.5f) 
+        {
+            rb.AddRelativeForce(new Vector3(flyright, 0, 0));
+        }
+        if (transform.position.x >= 6.2f)
+        {
+            rb.AddRelativeForce(new Vector3(flyLeft, 0, 0));
+        }
+       // check if toyBox has no health
+       if(toyBoxHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        // check if toybox hit by bullet
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            toyBoxHealth -= 1;
+        }
+    }
 }
