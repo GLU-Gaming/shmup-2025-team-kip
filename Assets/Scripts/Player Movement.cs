@@ -4,11 +4,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
      Rigidbody  rb;
-    private float verticalSpeed = 1;
-    private float horizontalSpeed = 1;
+    private float verticalSpeed = -1;
+    private float horizontalSpeed = -1;
 
     [SerializeField] GameObject Bullet;
-    [SerializeField] GameObject bulletSpawnPoint;
+    [SerializeField] GameObject BulletSpawn;
+    
+  
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         // Spawn Bullet
         if (Input.GetKeyDown(KeyCode.Space))
           { 
-           bulletSpawnPoint =  Instantiate(Bullet,transform.position,transform.rotation);
+             Instantiate(Bullet, BulletSpawn.transform.position,transform.rotation);
         }
     }
     private void OnTriggerEnter(Collider other)

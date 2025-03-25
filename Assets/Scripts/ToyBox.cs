@@ -69,7 +69,7 @@ public class ToyBox : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // check if toybox hit by bullet
-        if (other.gameObject.CompareTag("Bullet"))
+        if (other.CompareTag("Bullet"))
         {
             toyBoxHealth -= 1;
         }

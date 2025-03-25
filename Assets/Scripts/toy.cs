@@ -35,9 +35,9 @@ public class toy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Destroy(gameObject );
+            Destroy(gameObject);
         }
     }
 }
