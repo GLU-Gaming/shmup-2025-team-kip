@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 public class GameManager : MonoBehaviour
 {
-
-
     [SerializeField] public int lives = 3;
 
     [SerializeField] public GameObject life_1;
@@ -43,5 +41,5 @@ public class GameManager : MonoBehaviour
         waveActive = true;
 
     }
-
+    
 }
