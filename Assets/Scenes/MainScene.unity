@@ -421,6 +421,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070b984b7f66acd4c84da44bda2367fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWave: 1
+  lives: 3
+  life_1: {fileID: 0}
+  life_2: {fileID: 0}
+  life_3: {fileID: 0}
+  enemyPrefabs:
+  - {fileID: 2358577340783877048, guid: b668335943f8b6045905dfd4b01bd5b0, type: 3}
+  - {fileID: 3395477383592556183, guid: 53525bc5af4c12d41880d88784c22ad0, type: 3}
+  - {fileID: 6567617508590175003, guid: 3f038f5b7b311e24398c3d18ac81ebd0, type: 3}
 --- !u!1 &1408632783
 GameObject:
   m_ObjectHideFlags: 0
