@@ -30,7 +30,7 @@ public class ToyBox : MonoBehaviour
         toyTimer += Time.deltaTime;
 
         // spawn in random toy
-       if(toyTimer > 1)
+       if(toyTimer > 0.1)
         {
             toychooser = Random.Range(0, 4);
         }
@@ -44,7 +44,7 @@ public class ToyBox : MonoBehaviour
              Instantiate(Toy2, transform.position, transform.rotation);
             toyTimer = 0;
         }
-        if (toyTimer > 2 && toychooser == 2)
+        if (toyTimer > 2 && toychooser == 3)
         {
             Instantiate(Toy3, transform.position, transform.rotation);
             toyTimer = 0;

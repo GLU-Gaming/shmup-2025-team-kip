@@ -4,16 +4,19 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
      Rigidbody  rb;
-    [SerializeField] private float verticalSpeed = 3;
-    [SerializeField] private float horizontalSpeed = 1;
+     private float verticalSpeed = 3;
+     private float horizontalSpeed = 1;
 
     [SerializeField] GameObject Bullet;
     [SerializeField] GameObject BulletSpawn;
-    
-  
+
+    [SerializeField] float speedamount;
+
+    protected GameManager gamemanager;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gamemanager = GetComponent<GameManager>();
     }
 
    
@@ -21,10 +24,10 @@ public class PlayerMovement : MonoBehaviour
     {
         // Player Movement
         verticalSpeed = Input.GetAxisRaw("Vertical");
-        rb.AddRelativeForce(new Vector3(0, verticalSpeed, 0 ));
+        rb.AddRelativeForce(new Vector3(0, verticalSpeed * speedamount, 0 ));
 
         horizontalSpeed = Input.GetAxisRaw("Horizontal");
-        rb.AddRelativeForce(new Vector3(horizontalSpeed, 0, 0));
+        rb.AddRelativeForce(new Vector3(horizontalSpeed * speedamount, 0, 0));
 
         // Spawn Bullet
         if (Input.GetKeyDown(KeyCode.Space))
@@ -37,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
         // check if Player Hit an enemy
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Hit Enemy");
-            Destroy(gameObject);
+            gamemanager.lives -= 1;
+
         }
     }
 }
