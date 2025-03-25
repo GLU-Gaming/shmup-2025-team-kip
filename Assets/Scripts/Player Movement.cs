@@ -4,8 +4,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
      Rigidbody  rb;
-    private float verticalSpeed = -1;
-    private float horizontalSpeed = -1;
+    [SerializeField] private float verticalSpeed = -1;
+    [SerializeField] private float horizontalSpeed = -1;
 
     [SerializeField] GameObject Bullet;
     [SerializeField] GameObject BulletSpawn;
