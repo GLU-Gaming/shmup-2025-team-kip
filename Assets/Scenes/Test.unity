@@ -428,6 +428,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &557467322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1695927018424423802, guid: 26ca6481f4977a241be4ded6bba5f97a, type: 3}
+  m_PrefabInstance: {fileID: 1144633992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &580326834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1006,7 @@ PrefabInstance:
     - target: {fileID: 2382277096017139900, guid: 3f038f5b7b311e24398c3d18ac81ebd0, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1282945471}
+      objectReference: {fileID: 557467322}
     - target: {fileID: 6567617508590175003, guid: 3f038f5b7b311e24398c3d18ac81ebd0, type: 3}
       propertyPath: m_Name
       value: Enemy car
