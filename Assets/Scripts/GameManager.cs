@@ -13,21 +13,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject life_2;
     [SerializeField] public GameObject life_3;
 
-    // all enemies
-    //[SerializeField] public GameObject carEnemy; //homing missile enemy
-    //[SerializeField] public GameObject toyboxEnemy; // shoots different items in a curve
-    //[SerializeField] public GameObject robotEnemy; // only shoots forward
+     //all enemies
+    [ SerializeField ] public GameObject carEnemy; //homing missile enemy
+    [SerializeField] public GameObject toyboxEnemy; // shoots different items in a curve
+    [SerializeField] public GameObject robotEnemy; // only shoots forward
 
     [SerializeField] public int currentWave = 1;
 
 
     [SerializeField] private List<GameObject> enemiesOnScreen = new();
-    private bool waveActive = true;
+    private bool waveActive;
 
 
     void Start ()
     {
-
+        waveActive = true;
     }
 
     void Update ()
