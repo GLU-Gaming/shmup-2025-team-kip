@@ -58,6 +58,6 @@ public class PlayerMovement : MonoBehaviour
     }
     public void FastFireRatePlayer()
     {
-        FireRate = 1;
+        
     }
 }
