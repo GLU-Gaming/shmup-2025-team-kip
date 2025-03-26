@@ -13,6 +13,8 @@ public class RobotEnemy : MonoBehaviour
     // fly speed
     [SerializeField] float flyDown = -5;
     [SerializeField] float flyUp = 5;
+
+    float robotHp = 5;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -35,6 +37,17 @@ public class RobotEnemy : MonoBehaviour
         if(transform.position.y <= -27f)
         {
             rb.AddRelativeForce(new Vector3(0, flyUp, 0));
+        }
+        if(robotHp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Bullet"))
+        {
+            robotHp -= 1;
         }
     }
 
