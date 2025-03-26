@@ -18,9 +18,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float FireRate;
     void Start()
     {
-        rb = FindFirstObjectByType<Rigidbody>();
-        gamemanager = FindFirstObjectByType<GameManager>();
-        pickup = FindFirstObjectByType<PickUp>();
+        rb = GetComponent<Rigidbody>();
+        gamemanager = FindAnyObjectByType<GameManager>();
+        pickup = FindAnyObjectByType<PickUp>();
     }
 
    
