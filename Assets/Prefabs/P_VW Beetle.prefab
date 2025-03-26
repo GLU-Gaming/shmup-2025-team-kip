@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.198579
+      value: -5.59
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,13 +48,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -5347135149015233016, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_Name
-      value: VW Beetle
+      value: P_VW Beetle
       objectReference: {fileID: 0}
     - target: {fileID: 5618245324010896010, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_Enabled
