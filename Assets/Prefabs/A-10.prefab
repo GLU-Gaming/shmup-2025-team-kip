@@ -40,6 +40,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.394539
       objectReference: {fileID: 0}
@@ -77,6 +89,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
@@ -472,10 +488,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4d92e50c26311478b4a93b058a20cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: 2
-  horizontalSpeed: 1
   Bullet: {fileID: 5338643867870076766, guid: 28e71231daf69164381fd9817df5d689, type: 3}
   BulletSpawn: {fileID: 0}
+  speedamount: 0
+  FireRate: 0
 --- !u!65 &5066960742141994242
 BoxCollider:
   m_ObjectHideFlags: 0

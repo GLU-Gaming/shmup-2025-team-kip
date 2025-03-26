@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     PickUp pickup;
     // firerate
     [SerializeField] public float FireRate;
+    bool FastShoot = false;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -39,7 +40,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && FireRate >= 0.5f)
           { 
              Instantiate(Bullet, BulletSpawn.transform.position,transform.rotation);
-            FireRate = 0;
+           if(FastShoot == false)
+            {
+                FireRate = 0;
+            }
+
+        }
+        if(FireRate >= 15)
+        {
+            FastShoot = false;
         }
        
     }
@@ -58,6 +67,6 @@ public class PlayerMovement : MonoBehaviour
     }
     public void FastFireRatePlayer()
     {
-        
+        FastShoot = true;   
     }
 }

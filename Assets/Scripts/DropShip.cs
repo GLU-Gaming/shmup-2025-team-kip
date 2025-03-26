@@ -30,7 +30,7 @@ public class DropShip : MonoBehaviour
         // check if Timer is 60 seconds
         if(startTimer > 60)
         {
-            speed = -5;
+            speed = -10;
             rb.AddForce(new Vector3(1 * speed, 0, 0));
            
         }
@@ -41,9 +41,9 @@ public class DropShip : MonoBehaviour
             PickUpTimer = 0;
         }
         // reset ship to start
-        if(transform.position.x <= -20)
+        if(transform.position.x <= -94)
         {
-            transform.position = new Vector3(14f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(83f, transform.position.y, transform.position.z);
             startTimer = 0;
             speed = 0;
         }
