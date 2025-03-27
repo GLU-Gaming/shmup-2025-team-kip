@@ -11,35 +11,40 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject life_2;
     [SerializeField] public GameObject life_3;
 
-     //all enemies
-    [ SerializeField ] public GameObject carEnemy; //homing missile enemy
-    [SerializeField] public GameObject toyboxEnemy; // shoots different items in a curve
-    [SerializeField] public GameObject robotEnemy; // only shoots forward
+    [SerializeField] public int gameScore;
 
-    [SerializeField] public int currentWave = 1;
-
-
-    [SerializeField] private List<GameObject> enemiesOnScreen = new();
-    private bool waveActive;
-
-
-    void Start ()
+    public bool gameOver;
+    void start ()
     {
-        waveActive = true;
+        gameOver = false;
     }
 
-    void Update ()
+    void update ()
     {
-        if ( currentWave == 1 && waveActive == true )
+        livesManaging();
+
+       
+
+    }
+
+     void livesManaging ()
+    {
+        if ( lives == 2 )
         {
+            life_3.SetActive( false );
+        }
+
+        if ( lives == 1 )
+        {
+            life_2.SetActive( false );
+        }
+
+        if ( lives == 0 )
+        {
+            life_1.SetActive( false );
             
         }
-    }
 
-    void SpawnWave ( int difficulty )
-    {
-        waveActive = true;
 
     }
-    
 }

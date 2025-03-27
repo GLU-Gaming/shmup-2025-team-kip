@@ -10,9 +10,13 @@ public class HomingMissile : MonoBehaviour
 
     private float carHealth = 3;
 
+    GameManager game;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        game = FindFirstObjectByType<GameManager>();
     }
 
     private void LateUpdate()
@@ -29,6 +33,7 @@ public class HomingMissile : MonoBehaviour
         //Delete car if no health
         if (carHealth <= 0)
         {
+            game.gameScore += 100;
             Destroy(gameObject);
         }
     }

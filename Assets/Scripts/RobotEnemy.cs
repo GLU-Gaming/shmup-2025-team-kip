@@ -14,10 +14,14 @@ public class RobotEnemy : MonoBehaviour
     [SerializeField] float flyDown = -5;
     [SerializeField] float flyUp = 5;
 
+    GameManager game;
+
     float robotHp = 5;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        game = FindFirstObjectByType<GameManager>();
     }
 
     void Update()
@@ -40,7 +44,8 @@ public class RobotEnemy : MonoBehaviour
         }
         if(robotHp <= 0)
         {
-            Destroy(gameObject);
+            game.gameScore += 50;
+            Destroy(gameObject); 
         }
     }
     private void OnTriggerEnter(Collider other)

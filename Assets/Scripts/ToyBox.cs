@@ -17,12 +17,15 @@ public class ToyBox : MonoBehaviour
     [SerializeField] Vector3 Leftmargin;
 
     private float toyBoxHealth = 5;
+    GameManager game;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        game = FindFirstObjectByType<GameManager>();
     }
 
-    
     void Update()
     {
        
@@ -62,6 +65,7 @@ public class ToyBox : MonoBehaviour
        // check if toyBox has no health
        if(toyBoxHealth <= 0)
         {
+            game.gameScore += 80;
             Destroy(gameObject);
         }
 
