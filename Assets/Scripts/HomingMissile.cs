@@ -33,7 +33,7 @@ public class HomingMissile : MonoBehaviour
         //Delete car if no health
         if (carHealth <= 0)
         {
-            game.gameScore += 100;
+            game.currentScore += 100;
             Destroy(gameObject);
         }
     }

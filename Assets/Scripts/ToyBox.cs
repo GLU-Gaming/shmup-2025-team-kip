@@ -68,7 +68,7 @@ public class ToyBox : MonoBehaviour
        // check if toyBox has no health
        if(toyBoxHealth <= 0)
         {
-            game.gameScore += 80;
+            game.currentScore += 80;
            wave.RemoveToyBox(gameObject);
             Destroy(gameObject);
         }

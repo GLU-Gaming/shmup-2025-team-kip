@@ -12,23 +12,22 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject life_2;
     [SerializeField] public GameObject life_3;
 
-    [SerializeField] public int gameScore;
+    public int currentScore;
 
     [SerializeField] TMP_Text txt;
 
     public bool gameOver;
-    void start ()
+    void Start ()
     {
         gameOver = false;
 
     }
 
-    void update ()
+    void Update ()
     {
         livesManaging();
-
-        //txt.text = gameScore;
-
+        
+        txt.text = currentScore.ToString();
     }
 
      void livesManaging ()
@@ -48,7 +47,5 @@ public class GameManager : MonoBehaviour
             life_1.SetActive( false );
             
         }
-
-
     }
 }
