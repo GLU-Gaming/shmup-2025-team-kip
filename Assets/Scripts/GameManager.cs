@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] public int lives = 3;
@@ -13,17 +14,20 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public int gameScore;
 
+    [SerializeField] TMP_Text txt;
+
     public bool gameOver;
     void start ()
     {
         gameOver = false;
+
     }
 
     void update ()
     {
         livesManaging();
 
-       
+        txt.text = gameScore;
 
     }
 
