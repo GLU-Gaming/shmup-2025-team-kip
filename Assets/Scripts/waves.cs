@@ -38,12 +38,12 @@ public class waves : MonoBehaviour
     {
         for(int i = 0; i < robotCount; i++)
         {
-            GameObject Robots = Instantiate(RobotEnemy, new Vector3(RobotSpawn.transform.position.x,Random.Range(62f,92f),75),Quaternion.identity);
+            GameObject Robots = Instantiate(RobotEnemy, new Vector3(RobotSpawn.transform.position.x,Random.Range(62f,132f),75),Quaternion.identity);
             spawnedRobot.Add(Robots);
         }
         for(int i = 0;i < ToyBoxCount; i++)
         {
-            GameObject toyBox = Instantiate(ToyEnemy, new Vector3(Random.Range(73,100) ,ToyBoxSpawn.transform.position.y,75),Quaternion.identity );
+            GameObject toyBox = Instantiate(ToyEnemy, new Vector3(Random.Range(73,120) ,ToyBoxSpawn.transform.position.y,75),Quaternion.identity );
             spawnedToyBox.Add(toyBox);
         }
 
