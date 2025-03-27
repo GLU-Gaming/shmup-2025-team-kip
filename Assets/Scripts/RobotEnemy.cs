@@ -14,7 +14,9 @@ public class RobotEnemy : MonoBehaviour
     [SerializeField] float flyDown = -5;
     [SerializeField] float flyUp = 5;
 
+    // find other scripts
     GameManager game;
+    waves wave;
 
     float robotHp = 5;
     void Start()
@@ -22,6 +24,7 @@ public class RobotEnemy : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         game = FindFirstObjectByType<GameManager>();
+        wave = FindFirstObjectByType<waves>();
     }
 
     void Update()
@@ -45,7 +48,8 @@ public class RobotEnemy : MonoBehaviour
         if(robotHp <= 0)
         {
             game.gameScore += 50;
-            Destroy(gameObject); 
+            wave.RemoveRobot(gameObject);
+            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter(Collider other)

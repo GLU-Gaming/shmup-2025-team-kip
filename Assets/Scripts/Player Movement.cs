@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
-        if(FireRate >= 15)
+        if(FireRate >= 10)
         {
             FastShoot = false;
         }
