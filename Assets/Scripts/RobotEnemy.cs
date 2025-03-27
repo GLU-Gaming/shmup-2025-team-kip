@@ -47,7 +47,7 @@ public class RobotEnemy : MonoBehaviour
         }
         if(robotHp <= 0)
         {
-            game.gameScore += 50;
+            game.currentScore += 50;
             wave.RemoveRobot(gameObject);
             Destroy(gameObject);
         }
