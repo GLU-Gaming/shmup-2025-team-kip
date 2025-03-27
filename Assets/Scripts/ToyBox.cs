@@ -17,13 +17,16 @@ public class ToyBox : MonoBehaviour
     [SerializeField] Vector3 Leftmargin;
 
     private float toyBoxHealth = 5;
+    
+    // find other scripts
     GameManager game;
-
+    waves wave;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
         game = FindFirstObjectByType<GameManager>();
+        wave = FindFirstObjectByType<waves>();
     }
 
     void Update()
@@ -66,6 +69,7 @@ public class ToyBox : MonoBehaviour
        if(toyBoxHealth <= 0)
         {
             game.gameScore += 80;
+           wave.RemoveToyBox(gameObject);
             Destroy(gameObject);
         }
 
