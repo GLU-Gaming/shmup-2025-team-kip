@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     {
         livesManaging();
 
-        txt.text = gameScore;
+        //txt.text = gameScore;
 
     }
 
