@@ -13,6 +13,8 @@ public class Attack1boss : MonoBehaviour
     [SerializeField] GameObject BulletSpawn4;
     [SerializeField] GameObject BulletSpawn5;
     [SerializeField] GameObject BulletSpawn6;
+    [SerializeField] GameObject BulletSpawn7;
+    [SerializeField] GameObject BulletSpawn8;
 
 
     void Start()
@@ -37,7 +39,15 @@ public class Attack1boss : MonoBehaviour
         {
            Destroy(rb);
            
-          //Instantiate(Bullet, )
+          Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation );
+          Instantiate(Bullet, BulletSpawn2.transform.position, BulletSpawn2.transform.rotation);
+          Instantiate(Bullet, BulletSpawn3.transform.position, BulletSpawn3.transform.rotation);
+          Instantiate(Bullet, BulletSpawn4.transform.position, BulletSpawn4.transform.rotation);
+          Instantiate(Bullet, BulletSpawn5.transform.position, BulletSpawn5.transform.rotation);
+          Instantiate(Bullet, BulletSpawn6.transform.position, BulletSpawn6.transform.rotation);
+          Instantiate(Bullet, BulletSpawn7.transform.position, BulletSpawn7.transform.rotation);
+          Instantiate(Bullet, BulletSpawn8.transform.position, BulletSpawn8.transform.rotation);
+          Destroy(gameObject);
         }
 
     }
