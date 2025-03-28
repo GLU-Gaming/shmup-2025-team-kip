@@ -81,5 +81,10 @@ public class ToyBox : MonoBehaviour
         {
             toyBoxHealth -= 1;
         }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            wave.RemoveToyBox(gameObject);
+            Destroy(gameObject);
+        }
     }
 }
