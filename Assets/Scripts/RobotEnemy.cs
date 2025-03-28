@@ -58,6 +58,11 @@ public class RobotEnemy : MonoBehaviour
         {
             robotHp -= 1;
         }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            wave.RemoveRobot(gameObject);
+            Destroy(gameObject);
+        }
     }
 
 }
