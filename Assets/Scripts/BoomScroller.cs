@@ -18,3 +18,4 @@ public class BoomScroller : MonoBehaviour
             transform.position = new Vector3( 116, transform.position.y, transform.position.z );
         }
     }
+}
