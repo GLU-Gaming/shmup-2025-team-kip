@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!1001 &573453341872344848
+=======
+--- !u!1001 &8699260341888037465
+>>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +14,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -10.566914
+=======
+      value: 7.5987906
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< Updated upstream
       value: -3.3292122
+=======
+      value: 10.721983
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalRotation.w
@@ -70,6 +82,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -4819223349682164798, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       insertIndex: -1
+<<<<<<< Updated upstream
       addedObject: {fileID: 3318897741235444438}
     - targetCorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       insertIndex: -1
@@ -84,12 +97,32 @@ GameObject:
   m_PrefabInstance: {fileID: 573453341872344848}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &3510276764392406061
+=======
+      addedObject: {fileID: 3681102132036058812}
+    - targetCorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 574271025035841492}
+    - targetCorrespondingSourceObject: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1055627873496202372}
+  m_SourcePrefab: {fileID: 100100000, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+--- !u!1 &3003532712683471714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+  m_PrefabInstance: {fileID: 8699260341888037465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &574271025035841492
+>>>>>>> Stashed changes
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1250381689063077570}
+=======
+  m_GameObject: {fileID: 3003532712683471714}
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -104,6 +137,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
+<<<<<<< Updated upstream
   m_Mesh: {fileID: 2141304314914140687, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
 --- !u!1 &4245765401119745234 stripped
 GameObject:
@@ -111,12 +145,25 @@ GameObject:
   m_PrefabInstance: {fileID: 573453341872344848}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &3318897741235444438
+=======
+  m_Mesh: {fileID: 518096272906257739, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+--- !u!1 &5019075783126948251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4819223349682164798, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+  m_PrefabInstance: {fileID: 8699260341888037465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3681102132036058812
+>>>>>>> Stashed changes
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 4245765401119745234}
+=======
+  m_GameObject: {fileID: 5019075783126948251}
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -132,18 +179,31 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8545447256379345787, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+<<<<<<< Updated upstream
 --- !u!1 &6260595984555671083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
   m_PrefabInstance: {fileID: 573453341872344848}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &4366832367390113157
+=======
+--- !u!1 &7932691017402092427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+  m_PrefabInstance: {fileID: 8699260341888037465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1055627873496202372
+>>>>>>> Stashed changes
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 6260595984555671083}
+=======
+  m_GameObject: {fileID: 7932691017402092427}
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -158,4 +218,8 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
+<<<<<<< Updated upstream
   m_Mesh: {fileID: 518096272906257739, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+=======
+  m_Mesh: {fileID: 2141304314914140687, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+>>>>>>> Stashed changes
