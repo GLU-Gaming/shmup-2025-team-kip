@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< Updated upstream
---- !u!1001 &573453341872344848
-=======
---- !u!1001 &8699260341888037465
->>>>>>> Stashed changes
+--- !u!1001 &7855527053785034534
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,11 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: -10.566914
-=======
-      value: 7.5987906
->>>>>>> Stashed changes
+      value: 8.328421
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26,11 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< Updated upstream
-      value: -3.3292122
-=======
-      value: 10.721983
->>>>>>> Stashed changes
+      value: 2.0127647
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64,25 +52,9 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cf2556b83c555274daacbb21b9acdd7d, type: 2}
-    - target: {fileID: -4819223349682164798, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_Name
-      value: P_VW Beetle
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
+      value: VW Beetle
       objectReference: {fileID: 0}
     - target: {fileID: 5618245324010896010, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -96,106 +68,28 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3676447354004948676}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -8633472316779393884}
     - targetCorrespondingSourceObject: {fileID: -4819223349682164798, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       insertIndex: -1
-<<<<<<< Updated upstream
-      addedObject: {fileID: 3318897741235444438}
+      addedObject: {fileID: 8017862822011099110}
     - targetCorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4366832367390113157}
+      addedObject: {fileID: 3703927766858587212}
     - targetCorrespondingSourceObject: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3510276764392406061}
+      addedObject: {fileID: 1260026952657901713}
   m_SourcePrefab: {fileID: 100100000, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
---- !u!4 &36004314886613243 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 573453341872344848}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &807333005587837505 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 573453341872344848}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3676447354004948676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807333005587837505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47d77a2d57e0a3346a070e9a30095225, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Car: {fileID: 807333005587837505}
-  Cartransform: {fileID: 36004314886613243}
---- !u!54 &-8633472316779393884
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807333005587837505}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1 &1250381689063077570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 573453341872344848}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &3510276764392406061
-=======
-      addedObject: {fileID: 3681102132036058812}
-    - targetCorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 574271025035841492}
-    - targetCorrespondingSourceObject: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1055627873496202372}
-  m_SourcePrefab: {fileID: 100100000, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
---- !u!1 &3003532712683471714 stripped
+--- !u!1 &4328867550721039901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 8699260341888037465}
+  m_PrefabInstance: {fileID: 7855527053785034534}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &574271025035841492
->>>>>>> Stashed changes
+--- !u!64 &3703927766858587212
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-  m_GameObject: {fileID: 1250381689063077570}
-=======
-  m_GameObject: {fileID: 3003532712683471714}
->>>>>>> Stashed changes
+  m_GameObject: {fileID: 4328867550721039901}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -210,33 +104,19 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-<<<<<<< Updated upstream
-  m_Mesh: {fileID: 2141304314914140687, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
---- !u!1 &4245765401119745234 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4819223349682164798, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 573453341872344848}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &3318897741235444438
-=======
   m_Mesh: {fileID: 518096272906257739, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
---- !u!1 &5019075783126948251 stripped
+--- !u!1 &5772169799605863652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4819223349682164798, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 8699260341888037465}
+  m_PrefabInstance: {fileID: 7855527053785034534}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &3681102132036058812
->>>>>>> Stashed changes
+--- !u!64 &8017862822011099110
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-  m_GameObject: {fileID: 4245765401119745234}
-=======
-  m_GameObject: {fileID: 5019075783126948251}
->>>>>>> Stashed changes
+  m_GameObject: {fileID: 5772169799605863652}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -252,31 +132,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8545447256379345787, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-<<<<<<< Updated upstream
---- !u!1 &6260595984555671083 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3380151468045455045, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 573453341872344848}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &4366832367390113157
-=======
---- !u!1 &7932691017402092427 stripped
+--- !u!1 &8911250921889847028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1634647526731561426, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-  m_PrefabInstance: {fileID: 8699260341888037465}
+  m_PrefabInstance: {fileID: 7855527053785034534}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1055627873496202372
->>>>>>> Stashed changes
+--- !u!64 &1260026952657901713
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-  m_GameObject: {fileID: 6260595984555671083}
-=======
-  m_GameObject: {fileID: 7932691017402092427}
->>>>>>> Stashed changes
+  m_GameObject: {fileID: 8911250921889847028}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -291,8 +158,4 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-<<<<<<< Updated upstream
-  m_Mesh: {fileID: 518096272906257739, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
-=======
   m_Mesh: {fileID: 2141304314914140687, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
->>>>>>> Stashed changes

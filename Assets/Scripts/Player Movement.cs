@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         // check if Player Hit an enemy
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy") && other.gameObject.CompareTag("EnemyBullet"))
         {
             gamemanager.lives -= 1;
 
