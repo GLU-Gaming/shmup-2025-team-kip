@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         txt.text = currentScore.ToString();
     }
 
-     void livesManaging ()
+    public void livesManaging ()
     {
         if ( lives == 2 )
         {
