@@ -47,5 +47,7 @@ public class GameManager : MonoBehaviour
             life_1.SetActive( false );
             
         }
+        
+
     }
 }
