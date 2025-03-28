@@ -10,4 +10,8 @@ public class SceneSys : MonoBehaviour
     {
         SceneManager.LoadScene( "MainScene" );
     }
+    public void Quitgame()
+    {
+        Application.Quit();
+    }
 }
