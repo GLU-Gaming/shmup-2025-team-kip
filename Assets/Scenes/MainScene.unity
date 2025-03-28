@@ -482,7 +482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02630d0d7b6c3b14aa6c73ec84950b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fenceSpeed: 12
 --- !u!1 &156456707
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,7 +2656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02630d0d7b6c3b14aa6c73ec84950b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fenceSpeed: 20
 --- !u!54 &1456101601
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3125,8 +3123,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 171d134a7e5d5fb4d81807d821e461a7, type: 2}
-  m_sharedMaterial: {fileID: -1705091153060375872, guid: 171d134a7e5d5fb4d81807d821e461a7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3528,7 +3526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 1966904100}
-  x: 0.2
+  x: 0.05
   y: 0
 --- !u!114 &1966904100
 MonoBehaviour:
