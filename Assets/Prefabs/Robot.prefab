@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2840476512618113537}
   - component: {fileID: 8212620480527109295}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Robot
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 763021991590236922, guid: 8949518bb55f3294cb0ae2d595a81ded, type: 3}
   BulletSpawn: {fileID: 714955064652286552}
-  flyDown: -3
-  flyUp: 3
+  flyDown: -1
+  flyUp: 1
 --- !u!54 &8212620480527109295
 Rigidbody:
   m_ObjectHideFlags: 0
