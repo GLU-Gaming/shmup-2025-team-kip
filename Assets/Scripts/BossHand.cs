@@ -9,7 +9,16 @@ public class BossHand : MonoBehaviour
     [SerializeField] GameObject Attack1Spawn;
     [SerializeField] GameObject Attack1SpawnRotate;
 
-    float BossHealth = 100;
+
+    [SerializeField] GameObject attack2;
+    [SerializeField] GameObject Attack2Spawn1;
+    [SerializeField] GameObject Attack2Spawn2;
+    [SerializeField] GameObject attack2Spawn3;
+    [SerializeField] GameObject attack2Spawn4;
+
+    [SerializeField] GameObject attack3;
+
+   [SerializeField] float BossHealth = 200;
     void Start()
     {
         
@@ -21,10 +30,26 @@ public class BossHand : MonoBehaviour
         // start timers
         attackTimer += Time.deltaTime;
 
-        if(attackTimer > 5 && BossHealth >= 75)
+        // attack 1
+        if(attackTimer > 4 && BossHealth >= 150)
         {
             Instantiate(Attack1, Attack1Spawn.transform.position, Attack1SpawnRotate.transform.rotation);
             attackTimer = 0;
+        }
+
+        //attack 2
+        if(attackTimer > 5 && BossHealth >= 100 && BossHealth <= 150)
+        {
+            Instantiate(attack2, Attack2Spawn1.transform.position, transform.rotation);
+            Instantiate(attack2, Attack2Spawn2.transform.position, transform.rotation);
+            Instantiate(attack2, attack2Spawn3.transform.position, transform.rotation);
+            Instantiate(attack2, attack2Spawn4.transform.position, transform.rotation);
+            attackTimer = 0;
+        }
+        // attack 3
+        if(attackTimer > 5 && BossHealth >=50 && BossHealth <= 100)
+        {
+
         }
     }
     public void OnTriggerEnter(Collider other)
