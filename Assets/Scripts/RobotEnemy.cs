@@ -37,11 +37,11 @@ public class RobotEnemy : MonoBehaviour
             FireRate = 0;
         }
 
-        if(transform.position.y >= 26f)
+        if(transform.position.y >= 20f)
         {
             rb.AddRelativeForce(new Vector3(0, flyDown, 0));
         }
-        if(transform.position.y <= -27f)
+        if(transform.position.y <= -20f)
         {
             rb.AddRelativeForce(new Vector3(0, flyUp, 0));
         }
