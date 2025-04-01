@@ -3,7 +3,7 @@ using UnityEngine;
 public class Attack1boss : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float speed = 3;
+    [SerializeField] float speed = 4;
 
     [SerializeField] GameObject Bullet;
 
