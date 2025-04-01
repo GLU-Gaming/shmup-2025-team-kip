@@ -43,7 +43,7 @@ public class DropShip : MonoBehaviour
         // reset ship to start
         if(transform.position.x <= -94)
         {
-            transform.position = new Vector3(83f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(93f, transform.position.y, transform.position.z);
             startTimer = 0;
             speed = 0;
         }
