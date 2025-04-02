@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a8ad0df022100784889e2093936c8944, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8ad0df022100784889e2093936c8944, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8ad0df022100784889e2093936c8944, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8ad0df022100784889e2093936c8944, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.252756
       objectReference: {fileID: 0}
@@ -48,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8ad0df022100784889e2093936c8944, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8164235154189777314, guid: a8ad0df022100784889e2093936c8944, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -70,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 59ec7b00fe1d6724c953e81a9de18d30, type: 2}
     - target: {fileID: 919132149155446097, guid: a8ad0df022100784889e2093936c8944, type: 3}
       propertyPath: m_Name
-      value: gun arm robot
+      value: P_gun arm robot
       objectReference: {fileID: 0}
     - target: {fileID: 5300571832332701988, guid: a8ad0df022100784889e2093936c8944, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
