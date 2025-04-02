@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public bool gameOver;
 
-    [SerializeField] public int CurrentWave;
+    [SerializeField] public int CurrentWave = 1;
     [SerializeField] TMP_Text Wave;
     void Start ()
     {
@@ -40,11 +40,15 @@ public class GameManager : MonoBehaviour
         if ( lives == 2 )
         {
             life_3.SetActive( false );
+            life_2.SetActive( true );
+            life_1.SetActive( true );
         }
 
         if ( lives == 1 )
         {
+            life_3.SetActive ( false );
             life_2.SetActive( false );
+            life_1.SetActive ( true );
         }
 
         if ( lives == 0 )
