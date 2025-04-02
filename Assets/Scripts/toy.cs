@@ -4,12 +4,17 @@ public class toy : MonoBehaviour
 {
     Rigidbody rb;
 
-    [SerializeField ]private float verticalThrow = 3.5f;
-    [SerializeField] private float horizontalThrow = -1.1f;
+    [SerializeField ]private float verticalThrowLeft = 7f;
+    [SerializeField] private float horizontalThrowLeft = -4f;
+    
+    [SerializeField] private float verticalThrowRight = -7f;
+    [SerializeField] private float horizontalThrowRight = 4f;
     private float ThrowTimer = 0;
 
 
     float DeleteTimer;
+
+    public int ThrowSide = 1;
 
     void Start()
     {
@@ -26,9 +31,19 @@ public class toy : MonoBehaviour
             Destroy(gameObject);
         }
         ThrowTimer += Time.deltaTime;
-        if(ThrowTimer < 1.3f)
+        if(ThrowSide == 1)
         {
-            rb.AddRelativeForce(new Vector3(horizontalThrow, verticalThrow, 0));
+            if (ThrowTimer < 0.9f)
+            {
+                rb.AddForce(new Vector3(horizontalThrowLeft, verticalThrowLeft, 0));
+            }
+        }
+        if(ThrowSide == 2)
+        {
+            if (ThrowTimer < 0.9f)
+            {
+                rb.AddForce(new Vector3(horizontalThrowRight, verticalThrowRight, 0));
+            }
         }
 
 

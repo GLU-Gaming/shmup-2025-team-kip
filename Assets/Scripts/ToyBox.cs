@@ -21,12 +21,14 @@ public class ToyBox : MonoBehaviour
     // find other scripts
     GameManager game;
     waves wave;
+    toy  Toy;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
         game = FindFirstObjectByType<GameManager>();
         wave = FindFirstObjectByType<waves>();
+        Toy = FindFirstObjectByType<toy>();
     }
 
     void Update()
@@ -60,10 +62,12 @@ public class ToyBox : MonoBehaviour
         if(transform.position.x <= -4.5f) 
         {
             rb.AddRelativeForce(new Vector3(flyright, 0, 0));
+            Toy.ThrowSide = 2;
         }
         if (transform.position.x >= 6.2f)
         {
             rb.AddRelativeForce(new Vector3(flyLeft, 0, 0));
+            Toy.ThrowSide = 1;
         }
        // check if toyBox has no health
        if(toyBoxHealth <= 0)

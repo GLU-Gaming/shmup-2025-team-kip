@@ -20,7 +20,8 @@ public class EnemyBullet : MonoBehaviour {
     void Update()
     {
         // let bullet go forward
-        rb.AddRelativeForce(new Vector3(-bulletForce, 0, 0));
+       // rb.AddRelativeForce(new Vector3(-bulletForce, 0, 0));
+        rb.linearVelocity = transform.forward * bulletForce;
 
         // Delete the bullet in 3 seconds
         if (bulletTimerStart)
