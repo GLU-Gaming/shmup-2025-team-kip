@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text txt;
 
     public bool gameOver;
+
+    [SerializeField] public int CurrentWave;
+    [SerializeField] TMP_Text Wave;
     void Start ()
     {
         gameOver = false;
@@ -28,6 +31,8 @@ public class GameManager : MonoBehaviour
         livesManaging();
         
         txt.text = currentScore.ToString();
+
+        Wave.text = "WAVE :  " + CurrentWave;
     }
 
     public void livesManaging ()

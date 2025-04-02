@@ -18,7 +18,7 @@ public class BossHand : MonoBehaviour
 
     [SerializeField] GameObject attack3;
 
-   [SerializeField] float BossHealth = 200;
+    [SerializeField] float BossHealth = 200;
     void Start()
     {
         

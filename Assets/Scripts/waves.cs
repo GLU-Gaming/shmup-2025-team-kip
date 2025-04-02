@@ -18,9 +18,13 @@ public class waves : MonoBehaviour
     // spawn points
     [SerializeField] Transform RobotSpawn;
     [SerializeField] Transform ToyBoxSpawn;
+
+    GameManager Game;
     void Start()
     {
         StartRound();
+
+        Game = FindFirstObjectByType<GameManager>();    
     }
 
     
@@ -31,6 +35,7 @@ public class waves : MonoBehaviour
             robotCount += 1;
             ToyBoxCount += 1;
             StartRound();
+            Game.CurrentWave += 1;
         }
     }
 
