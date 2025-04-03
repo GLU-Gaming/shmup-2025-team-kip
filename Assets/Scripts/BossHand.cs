@@ -19,9 +19,33 @@ public class BossHand : MonoBehaviour
     [SerializeField] GameObject attack3;
 
     [SerializeField] float BossHealth = 200;
+
+    [SerializeField] int speed;
+    // attack3 Variabelen
+    [SerializeField] bool Attack3Going = false;
+
+    float Attack3Timer= 0;
+
+    [SerializeField] GameObject Attack3Spawn1;
+    [SerializeField] GameObject Attack3Spawn2;
+    [SerializeField] GameObject Attack3Spawn3;
+    [SerializeField] GameObject Attack3Spawn4;
+
+    bool Attack3one = true;
+    bool Attack3two = true;
+    bool Attack3three = true;
+    bool Attack3four = true;
+    float bossFlySpeed = 3;
+    bool BossInMiddle = true;
+
+    bool BossGoingUp = false;
+    bool BossGoingDown = false;
+
+
+    Rigidbody rb;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
    
@@ -29,6 +53,11 @@ public class BossHand : MonoBehaviour
     {
         // start timers
         attackTimer += Time.deltaTime;
+        if (Attack3Going == true)
+        {
+            Attack3Timer += Time.deltaTime;
+        }
+       
 
         // attack 1
         if(attackTimer > 3 && BossHealth >= 150)
@@ -45,13 +74,77 @@ public class BossHand : MonoBehaviour
             Instantiate(attack2, attack2Spawn3.transform.position, transform.rotation);
             Instantiate(attack2, attack2Spawn4.transform.position, transform.rotation);
             attackTimer = 0;
-        }
-        // attack 3
-        if(attackTimer > 5 && BossHealth >=50 && BossHealth <= 100)
-        {
 
         }
+        // attack 3
+        {
+            if (attackTimer > 5 && BossHealth >= 50 && BossHealth <= 100)
+            {
+                Attack3Going = true;
+
+                attackTimer = 0;
+
+            }
+            if (Attack3Timer >= 0 && Attack3one && Attack3Timer <= 1)
+            {
+                Instantiate(attack3, Attack3Spawn1.transform.position, transform.rotation);
+                Attack3one = false;
+            }
+            if (Attack3Timer >= 2 && Attack3two && Attack3Timer <= 3)
+            {
+                Instantiate(attack3, Attack3Spawn2.transform.position, transform.rotation);
+                Attack3two = false;
+                Attack3one = true;
+            }
+            if (Attack3Timer >= 4 && Attack3three && Attack3Timer <= 5)
+            {
+                Instantiate(attack3, Attack3Spawn3.transform.position, transform.rotation);
+                Attack3three = false;
+                Attack3two = true;
+            }
+            if (Attack3Timer >= 6 && Attack3four && Attack3Timer <= 7)
+            {
+                Instantiate(attack3, Attack3Spawn4.transform.position, transform.rotation);
+                Attack3four = false;
+                Attack3Timer = 0;
+                Attack3Going = false;
+                Attack3three = true;
+                Attack3four = true;
+            }
+            if(BossHealth >= 50 && BossHealth <= 100)
+            {
+                if(BossInMiddle == true)
+                {
+                    rb.linearVelocity = transform.up * bossFlySpeed;
+                }
+                if(transform.position.y > 3.5)
+                {
+                 
+                    BossInMiddle = false;
+                    BossGoingDown = true;
+                    BossGoingUp = false;
+                }
+                if (transform.position.y < -1.5)
+                {
+                    
+                    BossGoingUp = true;
+                    BossGoingDown = false;
+                }
+                if(BossGoingUp == true)
+                {
+                    rb.linearVelocity = transform.up * bossFlySpeed;
+
+                }
+                if(BossGoingDown == true)
+                {
+                    rb.linearVelocity = transform.up * -bossFlySpeed;
+                }
+            }
+
+        }
+
     }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bullet"))
