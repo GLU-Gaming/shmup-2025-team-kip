@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public int CurrentWave = 1;
     [SerializeField] TMP_Text Wave;
+
+    [SerializeField] public GameObject Car;
     void Start ()
     {
         gameOver = false;
@@ -57,6 +59,10 @@ public class GameManager : MonoBehaviour
             
         }
         
+
+    }
+    public void SpawnCar()
+    {
 
     }
 }
