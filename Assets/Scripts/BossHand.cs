@@ -145,9 +145,6 @@ public class BossHand : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        
-    }
+   
     
 }
