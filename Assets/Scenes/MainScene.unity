@@ -2065,6 +2065,7 @@ MonoBehaviour:
   CurrentWave: 0
   Wave: {fileID: 1585138888}
   Car: {fileID: 4558912762371361682, guid: 40de7cf40ec89f543854b01cdd2c1aad, type: 3}
+  CarTimer: 0
 --- !u!114 &1141576827
 MonoBehaviour:
   m_ObjectHideFlags: 0

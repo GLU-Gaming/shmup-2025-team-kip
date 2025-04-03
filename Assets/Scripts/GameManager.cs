@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text Wave;
 
     [SerializeField] public GameObject Car;
+    [SerializeField] public float CarTimer;
     void Start ()
     {
         gameOver = false;
@@ -30,11 +31,17 @@ public class GameManager : MonoBehaviour
 
     void Update ()
     {
+        CarTimer += Time.deltaTime;
         livesManaging();
         
         txt.text = currentScore.ToString();
 
         Wave.text = "WAVE :  " + CurrentWave;
+        if(CarTimer >= 30)
+        {
+            SpawnCar();
+            CarTimer = 0;
+        }
     }
 
     public void livesManaging ()
@@ -63,6 +70,6 @@ public class GameManager : MonoBehaviour
     }
     public void SpawnCar()
     {
-
+        Instantiate(Car, transform.position, transform.rotation );
     }
 }
