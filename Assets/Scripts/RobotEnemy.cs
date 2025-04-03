@@ -33,7 +33,7 @@ public class RobotEnemy : MonoBehaviour
 
         if(FireRate > 1.5f)
         {
-          Instantiate(Bullet, transform.position, transform.rotation);
+          Instantiate(Bullet, transform.position, Bullet.transform.rotation);
             FireRate = 0;
         }
 

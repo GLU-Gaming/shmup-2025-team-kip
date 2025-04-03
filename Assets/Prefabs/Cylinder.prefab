@@ -102,8 +102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7455889dd50fb3c408ad950cf7a10c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalThrow: 3.5
-  horizontalThrow: -2
+  verticalThrowLeft: 6
+  horizontalThrowLeft: -4
+  verticalThrowRight: -6
+  horizontalThrowRight: 4
+  ThrowSide: 1
 --- !u!54 &5906750707231747314
 Rigidbody:
   m_ObjectHideFlags: 0
