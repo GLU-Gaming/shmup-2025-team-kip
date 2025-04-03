@@ -1,0 +1,26 @@
+// WHAT WE HAVE
+
+EnemyDeath (source: unfa)
+HandDeathBuildup (source: bevibeldesign)
+BigBomb (used for EnemyPlaneAttack, HandDeathExplosion, PlayerDeath) (source: bevibeldesign)
+PlayerDamage (source: whiprealgood)
+
+EnemyPlaneAmbience (source: therandomsoundbyte2637)
+EnemyToyBoxAmbience (source: shamewap)
+EnemyToyBoxAttack (source: geoff-bremner-audio)
+EnemyRubberHandAttack (source: sorce)
+
+UiButtonClick (source: 7778)
+
+GarageLoop (source: shorzie)
+GardenLoop (source: maarten91)
+
+// WHAT WE DON'T HAVE
+
+EnemyCarAmbience (source: beamng)
+
+PlayerAttack (source: ..idfk vraag matthijs ff)
+
+
+
+GameBgm (source: youtube audio library)
