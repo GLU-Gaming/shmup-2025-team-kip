@@ -18,7 +18,7 @@ public class BossHand : MonoBehaviour
 
     [SerializeField] GameObject attack3;
 
-    [SerializeField] float BossHealth = 200;
+    [SerializeField] public float BossHealth = 200;
 
     [SerializeField] int speed;
     // attack3 Variabelen
@@ -147,10 +147,7 @@ public class BossHand : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bullet"))
-        {
-            BossHealth -= 5;
-        }
+        
     }
     
 }
