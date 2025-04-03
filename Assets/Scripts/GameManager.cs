@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public GameObject Car;
     [SerializeField] public float CarTimer;
+    [SerializeField] public GameObject CarSPawnLocation;
     void Start ()
     {
         gameOver = false;
@@ -70,6 +71,6 @@ public class GameManager : MonoBehaviour
     }
     public void SpawnCar()
     {
-        Instantiate(Car, transform.position, transform.rotation );
+        Instantiate(Car, CarSPawnLocation.transform.position, transform.rotation );
     }
 }
