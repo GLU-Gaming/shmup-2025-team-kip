@@ -35,7 +35,9 @@ public class toy : MonoBehaviour
         {
             if (ThrowTimer < 0.9f)
             {
-                rb.AddForce(new Vector3(horizontalThrowLeft, verticalThrowLeft, 0));
+                rb.linearVelocity = transform.up * verticalThrowLeft;
+                rb.linearVelocity = transform.right * -horizontalThrowLeft;
+                //rb.AddForce(new Vector3(horizontalThrowLeft, verticalThrowLeft, 0));
             }
         }
         if(ThrowSide == 2)
