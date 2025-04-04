@@ -4,6 +4,8 @@ public class Bossattack3 : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] float speed = 4;
+
+    float DeleteTimer = 0;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -13,5 +15,11 @@ public class Bossattack3 : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = transform.right * -speed;
+
+        DeleteTimer += Time.deltaTime;
+        if(DeleteTimer > 15)
+        {
+            Destroy(gameObject);
+        }
     }
 }

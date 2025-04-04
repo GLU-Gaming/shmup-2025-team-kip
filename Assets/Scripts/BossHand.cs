@@ -18,7 +18,7 @@ public class BossHand : MonoBehaviour
 
     [SerializeField] GameObject attack3;
 
-    [SerializeField] public float BossHealth = 200;
+    [SerializeField] public float BossHealth = 300;
 
     [SerializeField] int speed;
     // attack3 Variabelen
@@ -41,11 +41,18 @@ public class BossHand : MonoBehaviour
     bool BossGoingUp = false;
     bool BossGoingDown = false;
 
+    // attack 4 variabelen
+    public GameObject Attack4;
+
+    int RandomXSpawn;
+
+    //[SerializeField] Vector3 BossAttack4Spawn;
 
     Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        RandomXSpawn = Random.Range(5, 11);
     }
 
    
@@ -60,25 +67,25 @@ public class BossHand : MonoBehaviour
        
 
         // attack 1
-        if(attackTimer > 3 && BossHealth >= 150)
+        if(attackTimer > 3 && BossHealth >= 225)
         {
             Instantiate(Attack1, Attack1Spawn.transform.position, Attack1SpawnRotate.transform.rotation);
             attackTimer = 0;
         }
 
         //attack 2
-        if(attackTimer > 5 && BossHealth >= 100 && BossHealth <= 150)
+        if(attackTimer > 7 && BossHealth >= 150 && BossHealth <= 225)
         {
             Instantiate(attack2, Attack2Spawn1.transform.position, transform.rotation);
             Instantiate(attack2, Attack2Spawn2.transform.position, transform.rotation);
             Instantiate(attack2, attack2Spawn3.transform.position, transform.rotation);
-            Instantiate(attack2, attack2Spawn4.transform.position, transform.rotation);
+           // Instantiate(attack2, attack2Spawn4.transform.position, transform.rotation);
             attackTimer = 0;
 
         }
         // attack 3
         {
-            if (attackTimer > 5 && BossHealth >= 50 && BossHealth <= 100)
+            if (attackTimer > 5 && BossHealth >= 75 && BossHealth <= 150)
             {
                 Attack3Going = true;
 
@@ -111,7 +118,7 @@ public class BossHand : MonoBehaviour
                 Attack3three = true;
                 Attack3four = true;
             }
-            if(BossHealth >= 50 && BossHealth <= 100)
+            if(BossHealth >= 75 && BossHealth <= 150)
             {
                 if(BossInMiddle == true)
                 {
@@ -143,6 +150,13 @@ public class BossHand : MonoBehaviour
 
         }
 
+        // attack4 
+        if(attackTimer >= 3.5f && BossHealth >= 0 && BossHealth <= 75)
+        {
+            Instantiate(Attack4, new Vector3(12,RandomXSpawn,0),  transform.rotation);
+            attackTimer = 0;
+            RandomXSpawn = Random.Range(6, 11);
+        }
     }
 
    
