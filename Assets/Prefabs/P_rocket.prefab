@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.055318
       objectReference: {fileID: 0}
@@ -48,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2577548232221058511, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.2
@@ -76,6 +92,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7202271454713460447, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -89,6 +109,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3042423854344214054}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 687659503177559776}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5528826086336468884}
     - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5060577476080041014}
@@ -125,6 +151,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 72
   m_CollisionDetection: 0
+--- !u!114 &687659503177559776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4993506139128948285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5633e4b98015cf44a84fc8c7147b302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1695927018424423802, guid: 12eba8acb7c145a459ea514df7e7fe8f, type: 3}
+  speed: 5
+  rotateSpeed: 0.03
+--- !u!65 &5528826086336468884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4993506139128948285}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8877788011228910956 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 010ff732e3ce8564386c1a24efb2a96e, type: 3}
@@ -145,7 +207,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
