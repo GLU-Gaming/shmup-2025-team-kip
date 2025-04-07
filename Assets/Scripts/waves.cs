@@ -22,9 +22,10 @@ public class waves : MonoBehaviour
     GameManager Game;
     void Start()
     {
+        Game = FindFirstObjectByType<GameManager>();
         StartRound();
 
-        Game = FindFirstObjectByType<GameManager>();    
+  
     }
 
     
@@ -39,9 +40,9 @@ public class waves : MonoBehaviour
         }
     }
 
-    private void StartRound()
+    public void StartRound()
     {
-        if (Game.CurrentWave < 10)
+        if (Game.CurrentWave <= 9)
         {
             for (int i = 0; i < robotCount; i++)
             {
@@ -53,6 +54,10 @@ public class waves : MonoBehaviour
                 GameObject toyBox = Instantiate(ToyEnemy, new Vector3(Random.Range(73, 120), ToyBoxSpawn.transform.position.y, 75), Quaternion.identity);
                 spawnedToyBox.Add(toyBox);
             }
+        }
+       if(Game.CurrentWave >= 10)
+        {
+
         }
 
 

@@ -254,6 +254,7 @@ MonoBehaviour:
   toychooser: 0
   toyTimer: 0
   Leftmargin: {x: 0, y: 0, z: 0}
+  DeathParticle: {fileID: 8147630193786525787, guid: 8d43507f6a78b0a428f7db0989f89d20, type: 3}
 --- !u!54 &2552700555869310528
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class HomingMissile : MonoBehaviour
 
     private float carHealth = 3;
 
+    public GameObject DeathParticle;
+
     GameManager game;
 
     void Start()
@@ -35,6 +37,7 @@ public class HomingMissile : MonoBehaviour
         {
             game.currentScore += 100;
             Destroy(gameObject);
+            Instantiate(DeathParticle, transform.position, transform.rotation);
         }
     }
     private void OnTriggerEnter(Collider other)
