@@ -35,6 +35,7 @@ public class toy : MonoBehaviour
         {
             if (ThrowTimer < 0.9f)
             {
+
                 rb.AddForce(new Vector3(horizontalThrowLeft, verticalThrowLeft, 0));
             }
         }

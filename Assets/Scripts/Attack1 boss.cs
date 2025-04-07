@@ -15,6 +15,9 @@ public class Attack1boss : MonoBehaviour
     [SerializeField] GameObject BulletSpawn6;
     [SerializeField] GameObject BulletSpawn7;
     [SerializeField] GameObject BulletSpawn8;
+    // sounds
+    [SerializeField] AudioSource Explosion;
+    [SerializeField] AudioClip Expl;
 
 
     void Start()
@@ -38,7 +41,7 @@ public class Attack1boss : MonoBehaviour
         if(transform.position.x <= -1.4f)
         {
            Destroy(rb);
-           
+            
           Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation );
           Instantiate(Bullet, BulletSpawn2.transform.position, BulletSpawn2.transform.rotation);
           Instantiate(Bullet, BulletSpawn3.transform.position, BulletSpawn3.transform.rotation);
@@ -47,7 +50,9 @@ public class Attack1boss : MonoBehaviour
           Instantiate(Bullet, BulletSpawn6.transform.position, BulletSpawn6.transform.rotation);
           Instantiate(Bullet, BulletSpawn7.transform.position, BulletSpawn7.transform.rotation);
           Instantiate(Bullet, BulletSpawn8.transform.position, BulletSpawn8.transform.rotation);
-          Destroy(gameObject);
+            Explosion.Play();
+            Destroy(gameObject);
+
         }
 
     }

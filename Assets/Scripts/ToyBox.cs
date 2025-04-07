@@ -17,11 +17,16 @@ public class ToyBox : MonoBehaviour
     [SerializeField] Vector3 Leftmargin;
 
     private float toyBoxHealth = 5;
+
+    public GameObject DeathParticle;
     
     // find other scripts
     GameManager game;
     waves wave;
     toy  Toy;
+    // sounds
+    [SerializeField] private AudioClip GetHit;
+    [SerializeField] private AudioSource GetHitPlayer;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -75,6 +80,7 @@ public class ToyBox : MonoBehaviour
             game.currentScore += 80;
            wave.RemoveToyBox(gameObject);
             Destroy(gameObject);
+            Instantiate(DeathParticle, transform.position, transform.rotation);
         }
 
     }
@@ -84,6 +90,7 @@ public class ToyBox : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             toyBoxHealth -= 1;
+            GetHitPlayer.Play();
         }
         if (other.gameObject.CompareTag("Player"))
         {

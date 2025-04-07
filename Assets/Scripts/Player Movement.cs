@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     // firerate
     [SerializeField] public float FireRate;
     bool FastShoot = false;
+    // shoot sound
+    public AudioSource AudioSource;
+    public AudioClip Shoot;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -40,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && FireRate >= 0.5f)
           { 
              Instantiate(Bullet, BulletSpawn.transform.position,transform.rotation);
+            AudioSource.Play();
            if(FastShoot == false)
             {
                 FireRate = 0;

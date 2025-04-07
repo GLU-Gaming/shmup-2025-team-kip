@@ -10,6 +10,7 @@ public class RobotEnemy : MonoBehaviour
 
     Rigidbody rb;
 
+    public GameObject DeathParticle;
     // fly speed
     [SerializeField] float flyDown = -5;
     [SerializeField] float flyUp = 5;
@@ -50,6 +51,7 @@ public class RobotEnemy : MonoBehaviour
             game.currentScore += 50;
             wave.RemoveRobot(gameObject);
             Destroy(gameObject);
+            Instantiate(DeathParticle, transform.position, transform.rotation);
         }
     }
     private void OnTriggerEnter(Collider other)
