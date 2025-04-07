@@ -44,14 +44,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f90e3bfb66089d047aa453c75fcdc4f9, type: 3}
   m_Resource: {fileID: 8300000, guid: f90e3bfb66089d047aa453c75fcdc4f9, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.59
-  m_Pitch: 1.26
+  m_PlayOnAwake: 0
+  m_Volume: 0.82
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 125
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  Bullet: {fileID: 763021991590236922, guid: 8949518bb55f3294cb0ae2d595a81ded, type: 3}
+  Bullet: {fileID: 8347808174428455708, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
   BulletSpawn1: {fileID: 4389612531011024676}
   BulletSpawn2: {fileID: 7728442940831029805}
   BulletSpawn3: {fileID: 4847585952348969034}
@@ -394,8 +394,8 @@ MonoBehaviour:
   BulletSpawn6: {fileID: 3702397734635449804}
   BulletSpawn7: {fileID: 3424166079959590588}
   BulletSpawn8: {fileID: 3523479610413093504}
-  Explosion: {fileID: 0}
-  Expl: {fileID: 0}
+  Explosion: {fileID: 7919065316490415815}
+  Expl: {fileID: 8300000, guid: f90e3bfb66089d047aa453c75fcdc4f9, type: 3}
 --- !u!54 &1486490503559560344
 Rigidbody:
   m_ObjectHideFlags: 0
