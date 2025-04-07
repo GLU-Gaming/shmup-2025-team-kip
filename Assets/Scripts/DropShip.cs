@@ -13,6 +13,10 @@ public class DropShip : MonoBehaviour
     [SerializeField] GameObject Pickup;
     [SerializeField] GameObject PickUpSpawnPoint;
     float PickUpTimer = 30;
+    // sounds 
+    [SerializeField] AudioSource AudioSourc;
+    [SerializeField] AudioClip PlaneSound;
+    private int PlaySoundOne = 1;
 
     void Start()
     {
@@ -32,7 +36,14 @@ public class DropShip : MonoBehaviour
         {
             speed = -10;
             rb.AddForce(new Vector3(1 * speed, 0, 0));
-           
+            if(PlaySoundOne == 1)
+            {
+                AudioSourc.Play();
+                PlaySoundOne = 2;
+            }
+
+
+
         }
         // check if ship is in the middle of the screen
         if(transform.position.x <= -2 && transform.position.x >= -3 && PickUpTimer >= 30)
@@ -43,9 +54,11 @@ public class DropShip : MonoBehaviour
         // reset ship to start
         if(transform.position.x <= -94)
         {
-            transform.position = new Vector3(93f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(95f, transform.position.y, transform.position.z);
             startTimer = 0;
             speed = 0;
+            AudioSourc.Pause();
+            PlaySoundOne = 1;
         }
 
             

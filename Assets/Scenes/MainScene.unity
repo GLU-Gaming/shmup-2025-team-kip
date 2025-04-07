@@ -2567,6 +2567,22 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 105421444054414259, guid: f71e853caeff89c4a959d41a87f96740, type: 3}
+      propertyPath: PlaneSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 25c1f2a9f08f9394480b7d49df943f82, type: 3}
+    - target: {fileID: 1214162384834808718, guid: f71e853caeff89c4a959d41a87f96740, type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214162384834808718, guid: f71e853caeff89c4a959d41a87f96740, type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214162384834808718, guid: f71e853caeff89c4a959d41a87f96740, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3245317406266516808, guid: f71e853caeff89c4a959d41a87f96740, type: 3}
       propertyPath: m_Name
       value: DropShip
