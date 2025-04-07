@@ -3805,7 +3805,7 @@ PrefabInstance:
     - target: {fileID: 3484283692831288056, guid: 883ebc8adc44c884f8e63d5d230d0da7, type: 3}
       propertyPath: Bullet
       value: 
-      objectReference: {fileID: 8347808174428455708, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
+      objectReference: {fileID: 763021991590236922, guid: 8949518bb55f3294cb0ae2d595a81ded, type: 3}
     - target: {fileID: 3983915178146167993, guid: 883ebc8adc44c884f8e63d5d230d0da7, type: 3}
       propertyPath: m_Name
       value: boss attack 1

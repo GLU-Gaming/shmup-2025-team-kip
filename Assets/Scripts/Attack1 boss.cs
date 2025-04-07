@@ -42,7 +42,7 @@ public class Attack1boss : MonoBehaviour
         {
            Destroy(rb);
             
-          Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation );
+          Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);
           Instantiate(Bullet, BulletSpawn2.transform.position, BulletSpawn2.transform.rotation);
           Instantiate(Bullet, BulletSpawn3.transform.position, BulletSpawn3.transform.rotation);
           Instantiate(Bullet, BulletSpawn4.transform.position, BulletSpawn4.transform.rotation);
