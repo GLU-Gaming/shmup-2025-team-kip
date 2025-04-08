@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4071067651704133698}
   - component: {fileID: 3544772636289161213}
   - component: {fileID: 4684998186125643757}
-  - component: {fileID: 913659903292826368}
   - component: {fileID: 4541750359372437705}
+  - component: {fileID: 3969819352074590615}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: EnemyBullet
@@ -111,19 +111,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &913659903292826368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763021991590236922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aebe2d6b07d48048be13309f0a76804, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletForce: 6
 --- !u!54 &4541750359372437705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,6 +138,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3969819352074590615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763021991590236922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b97bd9dbc9ac14098baef66209afe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletForce: 3
 --- !u!1001 &7657303583657698262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8688164835253901734, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7111053
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8688164835253901734, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
       propertyPath: m_LocalPosition.y
@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8688164835253901734, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.3438292
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8688164835253901734, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
       propertyPath: m_LocalRotation.w
