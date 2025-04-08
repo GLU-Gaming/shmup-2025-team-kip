@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3544772636289161213}
   - component: {fileID: 4684998186125643757}
   - component: {fileID: 4541750359372437705}
-  - component: {fileID: 3969819352074590615}
+  - component: {fileID: -5500820127844167348}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: EnemyBullet
@@ -138,7 +138,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3969819352074590615
+--- !u!114 &-5500820127844167348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b97bd9dbc9ac14098baef66209afe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletForce: 3
+  bulletForce: 5
 --- !u!1001 &7657303583657698262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -222,10 +222,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8347808174428455708, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3531859125424270669}
   m_SourcePrefab: {fileID: 100100000, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
 --- !u!4 &1357477846689741424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8688164835253901734, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
   m_PrefabInstance: {fileID: 7657303583657698262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1845748263938367690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8347808174428455708, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
+  m_PrefabInstance: {fileID: 7657303583657698262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3531859125424270669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845748263938367690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b97bd9dbc9ac14098baef66209afe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletForce: 5

@@ -3,7 +3,7 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float bulletForce;
+    [SerializeField] float bulletForce = 5;
 
     // Bullet delete timer
     float bulletDeleteTimer;

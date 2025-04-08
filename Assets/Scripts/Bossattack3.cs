@@ -14,7 +14,7 @@ public class Bossattack3 : MonoBehaviour
    
     void Update()
     {
-        rb.linearVelocity = transform.right * -speed;
+        rb.linearVelocity = transform.forward * speed;
 
         DeleteTimer += Time.deltaTime;
         if(DeleteTimer > 15)
