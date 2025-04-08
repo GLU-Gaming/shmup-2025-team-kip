@@ -10,6 +10,7 @@ public class waves : MonoBehaviour
     // enemy prefabs
     [SerializeField] GameObject RobotEnemy;
     [SerializeField] GameObject ToyEnemy;
+    [SerializeField] GameObject Boss;
 
     // how many enemies spawn in each round
     float robotCount = 2;
@@ -42,7 +43,7 @@ public class waves : MonoBehaviour
 
     public void StartRound()
     {
-        if (Game.CurrentWave <= 9)
+        if (Game.CurrentWave <=3)
         {
             for (int i = 0; i < robotCount; i++)
             {
@@ -55,9 +56,9 @@ public class waves : MonoBehaviour
                 spawnedToyBox.Add(toyBox);
             }
         }
-       if(Game.CurrentWave >= 10)
+       if(Game.CurrentWave >= 5)
         {
-
+            Instantiate(Boss, new Vector3(63, 0.8f, 75), Quaternion.identity);
         }
 
 

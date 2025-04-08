@@ -69,7 +69,7 @@ public class BossHand : MonoBehaviour
         // attack 1
         if(attackTimer > 3 && BossHealth >= 225)
         {
-            Instantiate(Attack1, Attack1Spawn.transform.position, Attack1SpawnRotate.transform.rotation);
+            Instantiate(Attack1, Attack1Spawn.transform.position, Attack1SpawnRotate.transform.localRotation);
             attackTimer = 0;
         }
 

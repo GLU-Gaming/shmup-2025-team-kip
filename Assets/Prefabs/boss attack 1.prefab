@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  Bullet: {fileID: 8347808174428455708, guid: 1a46bb8b4df4f6b4eb659040744e1865, type: 3}
+  Bullet: {fileID: 763021991590236922, guid: 8949518bb55f3294cb0ae2d595a81ded, type: 3}
   BulletSpawn1: {fileID: 4389612531011024676}
   BulletSpawn2: {fileID: 7728442940831029805}
   BulletSpawn3: {fileID: 4847585952348969034}
