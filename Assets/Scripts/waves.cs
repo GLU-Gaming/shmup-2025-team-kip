@@ -43,7 +43,7 @@ public class waves : MonoBehaviour
 
     public void StartRound()
     {
-        if (Game.CurrentWave <=4)
+        if (Game.CurrentWave <=3)
         {
             for (int i = 0; i < robotCount; i++)
             {
@@ -56,7 +56,7 @@ public class waves : MonoBehaviour
                 spawnedToyBox.Add(toyBox);
             }
         }
-       if(Game.CurrentWave >= 6)
+       if(Game.CurrentWave >= 5)
         {
             Instantiate(Boss, new Vector3(63, 0.8f, 75), Quaternion.identity);
         }
