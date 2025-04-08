@@ -14,4 +14,10 @@ public class SceneSys : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void GameOver ()
+    {
+        SceneManager.LoadScene( "GameOver" );
+    }
+    
 }
