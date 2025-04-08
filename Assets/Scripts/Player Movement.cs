@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speedamount;
 
     protected GameManager gamemanager;
+    public HealthBar hpbar;
     PickUp pickup;
     // firerate
     [SerializeField] public float FireRate;
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         gamemanager = FindAnyObjectByType<GameManager>();
         pickup = FindAnyObjectByType<PickUp>();
+        hpbar = FindAnyObjectByType<HealthBar>();
     }
 
    
@@ -61,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         // check if Player Hit an enemy
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("EnemyBullet"))
         {
-            gamemanager.lives -= 1;
+            hpbar.PlayerDamage();
 
         }
         if (other.gameObject.CompareTag("PickUp"))
