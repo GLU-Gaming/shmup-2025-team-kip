@@ -63,11 +63,7 @@ public class PlayerMovement : MonoBehaviour
         // check if Player Hit an enemy
         if ( other.gameObject.CompareTag( "Enemy" ) || other.gameObject.CompareTag( "EnemyBullet" ) )
         {
-            while ( hpbar.HealthSize >= 0.1f )
-            {
-                hpbar.PlayerDamage();
-            }
-
+            hpbar.PlayerDamage();
         }
         if ( other.gameObject.CompareTag( "PickUp" ) )
         {
