@@ -54,7 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: cf2556b83c555274daacbb21b9acdd7d, type: 2}
     - target: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: m_Name
-      value: VW Beetle
+      value: P_VW Beetle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5618245324010896010, guid: 2ef69594c0283db4dbd32b4ebf0d0bab, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

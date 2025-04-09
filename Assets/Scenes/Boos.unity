@@ -467,10 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070b984b7f66acd4c84da44bda2367fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
-  life_1: {fileID: 9579673}
-  life_2: {fileID: 1810489175}
-  life_3: {fileID: 721390677}
   currentScore: 0
   txt: {fileID: 396790013}
   gameOver: 0
@@ -1826,6 +1822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -830646217923477558, guid: a71052d164b094e4bbf5a12eae2619e0, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1442921530913273059, guid: a71052d164b094e4bbf5a12eae2619e0, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1895,6 +1895,10 @@ PrefabInstance:
       propertyPath: attack2
       value: 
       objectReference: {fileID: 213361490}
+    - target: {fileID: 3300934232421890100, guid: 0090dcc26acd96a468128f92c809234a, type: 3}
+      propertyPath: BossHealth
+      value: 210
+      objectReference: {fileID: 0}
     - target: {fileID: 4487677488567053329, guid: 0090dcc26acd96a468128f92c809234a, type: 3}
       propertyPath: m_Name
       value: hand

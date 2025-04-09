@@ -9,12 +9,16 @@ public class Bossattack3 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.linearVelocity = transform.right * -speed;
     }
 
    
     void Update()
     {
-        rb.linearVelocity = transform.forward * speed;
+         
+
+        
+       
 
         DeleteTimer += Time.deltaTime;
         if(DeleteTimer > 15)

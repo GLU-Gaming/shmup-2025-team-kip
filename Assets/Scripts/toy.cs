@@ -33,7 +33,7 @@ public class toy : MonoBehaviour
         ThrowTimer += Time.deltaTime;
         if(ThrowSide == 1)
         {
-            if (ThrowTimer < 0.9f)
+            if (ThrowTimer < 0.6f)
             {
 
                 rb.AddForce(new Vector3(horizontalThrowLeft, verticalThrowLeft, 0));
@@ -41,7 +41,7 @@ public class toy : MonoBehaviour
         }
         if(ThrowSide == 2)
         {
-            if (ThrowTimer < 0.9f)
+            if (ThrowTimer < 0.6f)
             {
                 rb.AddForce(new Vector3(horizontalThrowRight, verticalThrowRight, 0));
             }
