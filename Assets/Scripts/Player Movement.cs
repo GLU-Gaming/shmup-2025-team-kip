@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-     Rigidbody  rb;
-     private float verticalSpeed = 3;
-     private float horizontalSpeed = 1;
+    Rigidbody rb;
+    private float verticalSpeed = 3;
+    private float horizontalSpeed = 1;
 
     [SerializeField] GameObject Bullet;
     [SerializeField] GameObject BulletSpawn;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // shoot sound
     public AudioSource AudioSource;
     public AudioClip Shoot;
-    void Start()
+    void Start ()
     {
         rb = GetComponent<Rigidbody>();
         gamemanager = FindAnyObjectByType<GameManager>();
@@ -29,50 +29,53 @@ public class PlayerMovement : MonoBehaviour
         hpbar = FindAnyObjectByType<HealthBar>();
     }
 
-   
-    void Update()
+
+    void Update ()
     {
         // Start timers
         FireRate += Time.deltaTime;
         // Player Movement
-        verticalSpeed = Input.GetAxisRaw("Vertical");
-        rb.AddRelativeForce(new Vector3(0, verticalSpeed * speedamount, 0 ));
+        verticalSpeed = Input.GetAxisRaw( "Vertical" );
+        rb.AddRelativeForce( new Vector3( 0, verticalSpeed * speedamount, 0 ) );
 
-        horizontalSpeed = Input.GetAxisRaw("Horizontal");
-        rb.AddRelativeForce(new Vector3(horizontalSpeed * speedamount, 0, 0));
+        horizontalSpeed = Input.GetAxisRaw( "Horizontal" );
+        rb.AddRelativeForce( new Vector3( horizontalSpeed * speedamount, 0, 0 ) );
 
         // Spawn Bullet
-        if (Input.GetKeyDown(KeyCode.Space) && FireRate >= 0.5f)
-          { 
-             Instantiate(Bullet, BulletSpawn.transform.position,transform.rotation);
+        if ( Input.GetKeyDown( KeyCode.Space ) && FireRate >= 0.5f )
+        {
+            Instantiate( Bullet, BulletSpawn.transform.position, transform.rotation );
             AudioSource.Play();
-           if(FastShoot == false)
+            if ( FastShoot == false )
             {
                 FireRate = 0;
             }
 
         }
-        if(FireRate >= 10)
+        if ( FireRate >= 10 )
         {
             FastShoot = false;
         }
-       
+
     }
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter ( Collider other )
     {
         // check if Player Hit an enemy
-        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("EnemyBullet"))
+        if ( other.gameObject.CompareTag( "Enemy" ) || other.gameObject.CompareTag( "EnemyBullet" ) )
         {
-            hpbar.PlayerDamage();
+            while ( hpbar.HealthSize >= 0.1f )
+            {
+                hpbar.PlayerDamage();
+            }
 
         }
-        if (other.gameObject.CompareTag("PickUp"))
+        if ( other.gameObject.CompareTag( "PickUp" ) )
         {
             FastFireRatePlayer();
         }
     }
-    public void FastFireRatePlayer()
+    public void FastFireRatePlayer ()
     {
-        FastShoot = true;   
+        FastShoot = true;
     }
 }
