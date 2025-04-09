@@ -246,8 +246,8 @@ GameObject:
   - component: {fileID: 6810754233795487492}
   - component: {fileID: 8612204900925379922}
   - component: {fileID: 2824132654987980874}
-  - component: {fileID: -5998028533924616483}
   - component: {fileID: -830646217923477558}
+  - component: {fileID: 8721619640388039625}
   m_Layer: 0
   m_Name: Boss attack 4
   m_TagString: Untagged
@@ -265,7 +265,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.7372792, y: 5.764, z: -14.19}
-  m_LocalScale: {x: 3.09, y: 21.333149, z: 2.8955839}
+  m_LocalScale: {x: 3.5099998, y: 24.2328, z: 3.2891583}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4100188972042001043}
@@ -348,19 +348,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &-5998028533924616483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8813485278504955317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acdcce58bf965744fa1c831e01d531eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!54 &-830646217923477558
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -388,3 +375,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 72
   m_CollisionDetection: 0
+--- !u!114 &8721619640388039625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813485278504955317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdcce58bf965744fa1c831e01d531eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15

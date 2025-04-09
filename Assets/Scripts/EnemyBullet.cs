@@ -31,7 +31,7 @@ public class EnemyBullet : MonoBehaviour {
         {
             bulletDeleteTimer += Time.deltaTime;
         }
-        if (bulletDeleteTimer >= 6)
+        if (bulletDeleteTimer >= 10)
         {
             Destroy(gameObject);
         }

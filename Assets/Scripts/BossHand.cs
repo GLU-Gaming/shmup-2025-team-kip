@@ -124,14 +124,14 @@ public class BossHand : MonoBehaviour
                 {
                     rb.linearVelocity = transform.up * bossFlySpeed;
                 }
-                if(transform.position.y > 3.5)
+                if(transform.position.y > 15)
                 {
                  
                     BossInMiddle = false;
                     BossGoingDown = true;
                     BossGoingUp = false;
                 }
-                if (transform.position.y < -1.5)
+                if (transform.position.y < -7)
                 {
                     
                     BossGoingUp = true;
@@ -153,9 +153,9 @@ public class BossHand : MonoBehaviour
         // attack4 
         if(attackTimer >= 3.5f && BossHealth >= 0 && BossHealth <= 75)
         {
-            Instantiate(Attack4, new Vector3(12,RandomXSpawn,75),  transform.rotation);
+            Instantiate(Attack4, new Vector3(109,RandomXSpawn,75),  transform.rotation);
             attackTimer = 0;
-            RandomXSpawn = Random.Range(-13, 10);
+            RandomXSpawn = Random.Range(23, 50);
         }
     }
 

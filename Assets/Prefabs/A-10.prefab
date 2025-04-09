@@ -474,6 +474,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5066960742141994242}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1738185335297663193}
     - targetCorrespondingSourceObject: {fileID: -4819223349682164798, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7213263375422676684}
@@ -626,6 +629,7 @@ MonoBehaviour:
   Bullet: {fileID: 5338643867870076766, guid: 28e71231daf69164381fd9817df5d689, type: 3}
   BulletSpawn: {fileID: 0}
   speedamount: 0
+  hpbar: {fileID: 0}
   FireRate: 0
   AudioSource: {fileID: 8947619553259501586}
   Shoot: {fileID: 8300000, guid: 6b3071cb5e13c50468ed8e99d49fb04f, type: 3}
@@ -650,6 +654,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4325094, y: 2.1684713, z: 5.9792147}
   m_Center: {x: 1.2671876, y: 3.6926053, z: 0.27850866}
+--- !u!65 &1738185335297663193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072487127305457600}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2502512960201211025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 76d2f0a8091f6b4409fc39b2aab8d0ed, type: 3}
