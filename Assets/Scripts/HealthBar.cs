@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] float HealthSize = 1.9f;
+    [SerializeField] public float HealthSize = 1.9f;
 
     GameManager game;
 
