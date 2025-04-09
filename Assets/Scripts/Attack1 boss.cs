@@ -3,7 +3,7 @@ using UnityEngine;
 public class Attack1boss : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float speed = 4;
+    [SerializeField] float speed = 9999;
 
     [SerializeField] GameObject Bullet;
 
@@ -39,7 +39,7 @@ public class Attack1boss : MonoBehaviour
         
         
 
-        if(transform.position.x <= -1.4f)
+        if(transform.position.x <= -3f)
         {
             Explosion.Play();
             Destroy(rb);

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.XR;
 
 public class EnemyBullet : MonoBehaviour {
     Rigidbody rb;
@@ -22,6 +23,7 @@ public class EnemyBullet : MonoBehaviour {
         // let bullet go forward
        rb.AddRelativeForce(new Vector3(-bulletForce, 0, 0));
         
+        
        // rb.linearVelocity = transform.forward * bulletForce;
 
         // Delete the bullet in 3 seconds
@@ -29,7 +31,7 @@ public class EnemyBullet : MonoBehaviour {
         {
             bulletDeleteTimer += Time.deltaTime;
         }
-        if (bulletDeleteTimer >= 3)
+        if (bulletDeleteTimer >= 6)
         {
             Destroy(gameObject);
         }

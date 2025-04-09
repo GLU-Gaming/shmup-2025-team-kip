@@ -67,7 +67,7 @@ public class BossHand : MonoBehaviour
        
 
         // attack 1
-        if(attackTimer > 3 && BossHealth >= 225)
+        if(attackTimer > 4 && BossHealth >= 225)
         {
             Instantiate(Attack1, Attack1Spawn.transform.position, Attack1SpawnRotate.transform.localRotation);
             attackTimer = 0;
@@ -153,9 +153,9 @@ public class BossHand : MonoBehaviour
         // attack4 
         if(attackTimer >= 3.5f && BossHealth >= 0 && BossHealth <= 75)
         {
-            Instantiate(Attack4, new Vector3(12,RandomXSpawn,0),  transform.rotation);
+            Instantiate(Attack4, new Vector3(12,RandomXSpawn,75),  transform.rotation);
             attackTimer = 0;
-            RandomXSpawn = Random.Range(6, 11);
+            RandomXSpawn = Random.Range(-13, 10);
         }
     }
 

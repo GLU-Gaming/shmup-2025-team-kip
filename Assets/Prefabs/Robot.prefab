@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8f6ecd4becb564ca7c4ef1ea9f781b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 763021991590236922, guid: 8949518bb55f3294cb0ae2d595a81ded, type: 3}
+  Bullet: {fileID: 4899948507068534699, guid: 195f1e19527e0f847bab750b021cfe30, type: 3}
   BulletSpawn: {fileID: 1974967496069573308}
   DeathParticle: {fileID: 8147630193786525787, guid: 8d43507f6a78b0a428f7db0989f89d20, type: 3}
   flyDown: -1

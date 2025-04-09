@@ -56,9 +56,10 @@ public class waves : MonoBehaviour
                 spawnedToyBox.Add(toyBox);
             }
         }
-       if(Game.CurrentWave >= 5)
+       if(Game.CurrentWave == 4)
         {
             Instantiate(Boss, new Vector3(63, 0.8f, 75), Quaternion.identity);
+            Game.CurrentWave = 5;
         }
 
 

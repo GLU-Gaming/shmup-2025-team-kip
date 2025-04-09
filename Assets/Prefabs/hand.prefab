@@ -155,7 +155,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.5, y: 0.35, z: 0.01696375}
-  m_LocalScale: {x: 4.925745, y: 4.925745, z: 4.925745}
+  m_LocalScale: {x: 34.61, y: 34.61, z: 34.61}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5949772918134761467}
@@ -254,7 +254,7 @@ MonoBehaviour:
   Attack1: {fileID: 3983915178146167993, guid: 883ebc8adc44c884f8e63d5d230d0da7, type: 3}
   Attack1Spawn: {fileID: 1254356546508209123}
   Attack1SpawnRotate: {fileID: 3983915178146167993, guid: 883ebc8adc44c884f8e63d5d230d0da7, type: 3}
-  attack2: {fileID: 0}
+  attack2: {fileID: 4993506139128948285, guid: 79d4b42e43042cd46a996051c618ab6e, type: 3}
   Attack2Spawn1: {fileID: 6379969205655943539}
   Attack2Spawn2: {fileID: 7574816686290882005}
   attack2Spawn3: {fileID: 3939973917115778306}

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bossattack3 : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float speed = 4;
+    [SerializeField] float speed = 50;
 
     float DeleteTimer = 0;
     void Start()
