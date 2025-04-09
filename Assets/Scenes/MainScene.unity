@@ -2340,7 +2340,7 @@ MonoBehaviour:
   spawnedRobot: []
   RobotEnemy: {fileID: 714955064652286552, guid: d6f84721c0bdc414a8d992700275e8d4, type: 3}
   ToyEnemy: {fileID: 7734877262003512302, guid: c8905e1f13cf304429631744bb183a1d, type: 3}
-  Boss: {fileID: 0}
+  Boss: {fileID: 4487677488567053329, guid: 0090dcc26acd96a468128f92c809234a, type: 3}
   RobotSpawn: {fileID: 500431468}
   ToyBoxSpawn: {fileID: 277157779}
 --- !u!1 &1181506579
