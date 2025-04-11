@@ -918,7 +918,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1766853729}
         m_TargetAssemblyTypeName: SceneSys, Assembly-CSharp
-        m_MethodName: GoToGame
+        m_MethodName: StartScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1093,7 +1093,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 668687099}
   - {fileID: 2053034135}
-  - {fileID: 1517607223}
   - {fileID: 851958763}
   - {fileID: 316183190}
   - {fileID: 1753351459}
+  - {fileID: 1517607223}

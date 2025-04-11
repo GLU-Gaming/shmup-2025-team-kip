@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] public float HealthSize = 1.9f;
@@ -17,7 +17,7 @@ public class HealthBar : MonoBehaviour
 
         if ( HealthSize <= 0 )
         {
-            game.gameOver = true;
+            SceneManager.LoadScene("GameOver");
         }
 
     }

@@ -662,58 +662,6 @@ MonoBehaviour:
   img: {fileID: 599817208}
   x: 0.1
   y: 0
---- !u!1 &1068603325
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1068603327}
-  - component: {fileID: 1068603326}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1068603326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068603325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b984b7f66acd4c84da44bda2367fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentScore: 0
-  txt: {fileID: 0}
-  gameOver: 0
-  CurrentWave: 1
-  Wave: {fileID: 0}
-  Car: {fileID: 0}
-  CarTimer: 0
-  CarSPawnLocation: {fileID: 0}
---- !u!4 &1068603327
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068603325}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1084870193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1380,6 @@ SceneRoots:
   - {fileID: 1843178969}
   - {fileID: 1145417558}
   - {fileID: 209101621}
-  - {fileID: 1068603327}
   - {fileID: 1084870197}
   - {fileID: 194024570}
   - {fileID: 1747650504}

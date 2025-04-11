@@ -19,5 +19,8 @@ public class SceneSys : MonoBehaviour
     {
         SceneManager.LoadScene( "GameOver" );
     }
-    
+    public void StartScreen()
+    {
+        SceneManager.LoadScene("StartScreen");
+    }
 }
