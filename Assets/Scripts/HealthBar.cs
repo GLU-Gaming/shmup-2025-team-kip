@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] public float HealthSize = 1.9f;
@@ -15,9 +15,9 @@ public class HealthBar : MonoBehaviour
     {
         transform.localScale = new Vector3( HealthSize, transform.localScale.y, transform.localScale.z );
 
-        if ( HealthSize <= 0 )
+        if ( HealthSize <= -0.19f)
         {
-            game.gameOver = true;
+            SceneManager.LoadScene("GameOver");
         }
 
     }

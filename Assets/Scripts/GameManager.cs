@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         if (gameOver == true)
         {
             Debug.Log( "game overrrr" );
-            scenesys.GameOver();
+            
         }
     }
 
