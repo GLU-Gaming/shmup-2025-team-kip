@@ -333,6 +333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: A-10
       objectReference: {fileID: 0}
+    - target: {fileID: 2457227303678888636, guid: 12eba8acb7c145a459ea514df7e7fe8f, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 5511109066220155342, guid: 12eba8acb7c145a459ea514df7e7fe8f, type: 3}
       propertyPath: BulletSpawn
       value: 
@@ -2285,7 +2289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1579870037612473348, guid: 7cce8dba49ac09e4aba66ef2e76676ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5808614730254865968, guid: 7cce8dba49ac09e4aba66ef2e76676ab, type: 3}
       propertyPath: m_LocalPosition.x
