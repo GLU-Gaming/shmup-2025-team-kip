@@ -339,9 +339,12 @@ RectTransform:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 108, y: 306}
   m_SizeDelta: {x: 870.7018, y: 204.7505}
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -373,7 +376,11 @@ MonoBehaviour:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_text: Battle of imagination
+=======
+  m_text: Battle Of Imagination
+>>>>>>> Stashed changes
 =======
   m_text: Battle Of Imagination
 >>>>>>> Stashed changes
@@ -450,7 +457,11 @@ MonoBehaviour:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_margin: {x: -362.23657, y: 0, z: -157.55957, w: 0}
+=======
+  m_margin: {x: -152.1955, y: 0, z: -247.57153, w: -13.087097}
+>>>>>>> Stashed changes
 =======
   m_margin: {x: -152.1955, y: 0, z: -247.57153, w: -13.087097}
 >>>>>>> Stashed changes
