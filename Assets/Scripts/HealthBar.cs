@@ -26,4 +26,5 @@ public class HealthBar : MonoBehaviour
     {
         HealthSize = HealthSize - 0.19f;
     }
+
 }

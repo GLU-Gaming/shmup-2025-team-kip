@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log( "game overrrr" );
             scenesys.GameOver();
-
-
         }
     }
 
