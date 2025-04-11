@@ -336,8 +336,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 108, y: 306}
   m_SizeDelta: {x: 870.7018, y: 204.7505}
+=======
+  m_AnchoredPosition: {x: -70, y: 335.95}
+  m_SizeDelta: {x: 631.5718, y: 204.7505}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382977103
 MonoBehaviour:
@@ -359,7 +364,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: Battle of imagination
+=======
+  m_text: Battle Of Imagination
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 754f5d2a8e12f6642b6bea7780e16f9f, type: 2}
   m_sharedMaterial: {fileID: 7280898874054624743, guid: 754f5d2a8e12f6642b6bea7780e16f9f, type: 2}
@@ -424,7 +433,11 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+<<<<<<< Updated upstream
   m_margin: {x: -362.23657, y: 0, z: -157.55957, w: 0}
+=======
+  m_margin: {x: -152.1955, y: 0, z: -247.57153, w: -13.087097}
+>>>>>>> Stashed changes
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
